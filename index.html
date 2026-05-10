@@ -10,7 +10,7 @@
 <body>
   <header class="header-principal">
     <div class="header-superior">
-    <div class="contenedor-header">
+    <div class="contenedor">
     <div class="logo">
       <a href="index.html">
         <img src="img/011logo.png" alt="Librería Enigma Detective" class="logo-img">
@@ -29,42 +29,49 @@
     </div>
 
     <div class="header-inferior">
-    <div class="contenedor-header">
+    <div class="contenedor">
+    <button class="menu-boton" aria-label="Abrir menú">
+        <span class="sr-only">Menú</span>
+    </button>
+
     <nav class="navegacion-principal">
-      <ul>
-        <li><a href="index.html">INICIO</a></li>
-        <li><a href="#catalogo">CATÁLOGO</a></li>
-        <li><a href="#quienes-somos">NOSOTROS</a></li>
-        <li><a href="#">CONTACTO</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="#catalogo">CATÁLOGO</a></li>
+            <li><a href="#quienes-somos">QUIENES SOMOS</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
     </nav>
     </div>
-    </div>
-  </header>
+</div>
 
    <section id="bienvenida"> 
       <h1>Bienvenidos</h1>
       <p>Entrá en un mundo donde cada página es un secreto por descubrir. Seleccionamos historias que desafían tu mente.</p>
     </section>
 
-  <main class="contenido">
+ <main class="contenedor contenido">
       
     <section id="quienes-somos">
       <h1>Especialistas en el Misterio</h1>
+      <div class="quienes-somos-info">
       <p>Enigma es un refugio para los buscadores de la verdad oculta. Somos una tienda especializada en la venta de novelas de suspenso, thriller psicológico y género policial, donde cada libro ha sido seleccionado bajo tres pilares fundamentales: complejidad psicológica, atmósfera envolvente e impacto narrativo.</p>
       <p>No buscamos cantidad, sino piezas clave que hayan dejado una huella en el género negro. Nuestra misión es ofrecer una experiencia inmersiva para quienes entienden que un buen libro no solo se lee, se investiga.</p>
+      </div>
     </section>
 
     <section id="catalogo">
       <h1>Catálogo de Novelas</h1> 
       <div class="contenedor-catalogo">
       <article class="producto">
+        <a href="producto.html">
         <img src="img/001.png" alt="Portada La paciente silenciosa">
-        <h2>La paciente silenciosa</h2>
+        </a>
+        <h2><a href="producto.html">La paciente silenciosa</a></h2>
         <p>Alex Michaelides</p>
         <p>Thriller Psicológico / Misterio</p>
         <p class="precio">$25.000</p>
-        <button type="button" class="btn-outline" id="fav-001">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -74,7 +81,7 @@
         <p>Thomas Harris</p>
         <p>Misterio / Thriller</p>
         <p class="precio">$32.500</p>
-        <button type="button" class="btn-outline" id="fav-002">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -84,7 +91,7 @@
         <p>Gillian Flynn</p>
         <p>Suspenso / Thriller</p>
         <p class="precio">$30.000</p>
-        <button type="button" class="btn-outline" id="fav-003"> Favorito</button>
+        <button type="button" class="btn-outline"> Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -94,7 +101,7 @@
         <p>George Orwell</p>
         <p>Ficción distópica / Suspenso</p>
         <p class="precio">$29.999</p>
-        <button type="button" class="btn-outline" id="fav-004">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -104,7 +111,7 @@
         <p>Joël Dicker</p>
         <p>Misterio / Thriller</p>
         <p class="precio">$25.000</p>
-        <button type="button" class="btn-outline" id="fav-005">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -114,7 +121,7 @@
         <p>Alex Michaelides</p>
         <p>Thriller Psicológico</p>
         <p class="precio">$28.000</p>
-        <button type="button" class="btn-outline" id="fav-006">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -124,7 +131,7 @@
         <p>John Fowles</p>
         <p>Novela Psicológica</p>
         <p class="precio">$30.000</p>
-        <button type="button" class="btn-outline" id="fav-007">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -134,7 +141,7 @@
         <p>Stephen King</p>
         <p>Misterio / Terror Psicológico</p>
         <p class="precio">$35.000</p>
-        <button type="button" class="btn-outline" id="fav-008">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -144,7 +151,7 @@
         <p>Freida McFadden</p>
         <p>Thriller Psicológico</p>
         <p class="precio">$25.000</p>
-        <button type="button" class="btn-outline" id="fav-009">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -154,7 +161,7 @@
         <p>J. D. Barker</p>
         <p>Thriller / Misterio</p>
         <p class="precio">$28.000</p>
-        <button type="button" class="btn-outline" id="fav-010">Favorito</button>
+        <button type="button" class="btn-outline">Favorito</button>
         <button type="button" class="btn-fill">Agregar al carrito</button>
       </article>
 
@@ -162,22 +169,26 @@
     </section>
   </main>
 
-  <footer>
-    <div class="contenedor-footer">
-      <div class="footer-info">
-        <h1>Sobre Librería Enigma</h1>
-        <p>Especialistas en suspense y thriller.</p>
-      </div>
-        <nav class="footer-nav">
-          <ul>
-            <li><a href="#quienes-somos">Quiénes somos</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
-      <div class="footer-alumna">
-        <p>Noelia Bareiro, ISTEA | 2026</p>
-      </div>
+ <footer>
+    <div class="contenedor contenedor-footer"> 
+    <div class="footer-info">
+      <h1>Sobre Librería Enigma</h1>
+      <p>Especialistas en suspenso y thriller.</p>
     </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer-alumna">
+      <p>Noelia Bareiro, ISTEA | 2026</p>
+      <a href="https://github.com/Noelia-Bareiro/Proyecto-Enigma-AWC" target="_blank" rel="noopener noreferrer" class="link-repo">
+        Ver Código en GitHub
+    </a>
+    </div>
+    </div> 
   </footer>
 
 </body>
