@@ -51,16 +51,14 @@ img {
   padding: 0 2rem;
 }
 
-.sr-only {
+.sr-only { /*revisar position clase 7 */
   position: absolute;
-  width: 1px;
+  top: -1000px;
+  left: -1000px;
+  display: block;
   height: 1px;
-  padding: 0;
-  margin: -1px;
+  width: 1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
 }
 
 .btn-outline, 
@@ -102,7 +100,7 @@ img {
 /* Estilos para el header */
 .header-principal {
   width: 100%;
-  position: sticky;
+  position: sticky; /* evita que el scroll de la pantalla modifique su posición */
   top: 0;
   z-index: 998;
   display: flex;
@@ -426,7 +424,7 @@ footer {
   }
 
   .menu-boton { 
-    display: none; /* Falta agregar la logica de los apuntes clase 6 */
+    display: none; /* Falta agregar la logica de los apuntes clase 6-7 */
   }
 
   .detalle-producto { 
